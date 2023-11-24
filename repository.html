@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>IKS Repository</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: georgia;
+    }
+
+    header {
+      background-color: #333;
+      padding: 15px;
+      text-align: center;
+      color: white;
+      position: fixed; /* Added position: fixed to make the header fixed */
+      top: 0;
+      width: 100%;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      margin: 10px 0;
+      width: 100%;
+      padding: 0;
+      box-sizing: border-box;
+      padding: 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      /* border: 1px solid #fff; */ /* Remove or comment out this line to remove the border */
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #ff6f00;
+      color: #333;
+      opacity: 75%;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 16px;
+      margin: 20px 0;
+    }
+
+    .button {
+      display: block;
+      width: 230px;
+      height: 150px;
+      background-color: #ff6f00; /* Updated color */
+      color: black;
+      text-align: center;
+      line-height: 150px;
+      font-size: 20px;
+      text-decoration: none;
+      /*margin: 20px;*/
+      margin-top: 30px;
+      margin-left: 15px;
+      margin-right: 15px;
+      border-radius: 8px;
+      background-image: url('architecture.jpeg'); /* Replace with desired image for each button */
+      background-size: cover;
+      background-position: center;
+      transition: background-color 0.5s ease;
+    }
+
+    .button:hover {
+      background-color: #3e8e41; /* Updated hover color */
+      color: black;
+      opacity: 85%;
+    }
+
+    .button.architecture { background: url('architecture.jpeg') center/cover; }
+    .button.food { background: url('food.jpeg') center/cover; }
+    .button.mathematics { background: url('math.jpeg') center/cover; }
+    .button.science { background: url('science.jpeg') center/cover; }
+    .button.art { background: url('art.jpeg') center/cover; }
+    .button.geography { background: url('geography.jpeg') center/cover; }
+    .button.medicine { background: url('medicine.jpeg') center/cover; }
+    .button.yoga { background: url('yoga.jpeg') center/cover; }
+    .button.astronomy { background: url('astronomy.jpeg') center/cover; }
+    .button.indian-culture { background: url('culture.jpeg') center/cover; }
+    .button.philosophy { background: url('philosophy.jpeg') center/cover; }
+    .button.education { background: url('education.jpeg') center/cover; }
+    .button.informative { background: url('informative.jpeg') center/cover; }
+    .button.practices { background: url('practices.jpeg') center/cover; }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+      opacity: 0.85;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="repository.html">Repository</a>
+      <a href="about_us.html">About Us</a>
+    </nav>
+  </header>
+
+  <p style="font-size: 24px; text-align: center; font-family:georgia; margin-left: 10%; margin-right: 10%; margin-top:120px">
+    Choose from one of the categories below to explore content related to Indian knowledge systems.
+  </p>
+
+  <div class="button-container">
+    <div class="button-row">
+      <a href="category_architecture.html" class="button architecture"><b>Architecture</b></a>
+      <a href="category_food.html" class="button food"><b>Food</b></a>
+      <a href="category_mathematics.html" class="button mathematics"><b>Mathematics</b></a>
+      <a href="category_science.html" class="button science"><b>Science</b></a>
+    </div>
+
+    <div class="button-row">
+      <a href="category_art.html" class="button art"><b>Art</b></a>
+      <a href="category_geography.html" class="button geography"><b>Geography</b></a>
+      <a href="category_medicine.html" class="button medicine"><b>Medicine</b></a>
+      <a href="category_yoga.html" class="button yoga"><b>Yoga</b></a>
+    </div>
+
+    <div class="button-row">
+      <a href="category_astronomy.html" class="button astronomy"><b>Astronomy</b></a>
+      <a href="category_culture.html" class="button indian-culture"><b>Culture</b></a>
+      <a href="category_philosophy.html" class="button philosophy"><b>Philosophy</b></a>
+    </div>
+
+    <div class="button-row">
+      <a href="category_education.html" class="button education"><b>Education</b></a>
+      <a href="category_informative.html" class="button informative"><b>Informative</b></a>
+      <a href="category_practices.html" class="button practices"><b>Practices</b></a>
+    </div>
+  </div>
+
+</body>
+</html>

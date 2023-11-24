@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>IKS Repository</title>
+
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: 'georgia';
+    }
+
+    header {
+      background-color: #333;
+      padding: 15px;
+      text-align: center;
+      color: white;
+      position: fixed; /* Added position: fixed to make the header fixed */
+      top: 0;
+      width: 100%;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      margin: 10px 0;
+      width: 100%;
+      padding: 0;
+      box-sizing: border-box;
+      padding: 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      /* border: 1px solid #fff; */ /* Remove or comment out this line to remove the border */
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #ff6f00;
+      color: #333;
+      opacity: 75%;
+    }
+
+    main {
+      padding: 20px;
+      margin: 0 10%; /* 10% left and right margin */
+      margin-top: 80px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 8px; /* Adjust the value to set the desired spacing between cells */
+      background-color: 333; /* Table background color */
+      border-radius: 8px;
+    }
+
+    td {
+      padding: 8px;
+      text-align: center;
+      border: none;
+      width: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-family: georgia;
+      font-weight: bold;
+      border-radius: 8px; /* Add this line for border-radius */
+      height: 48px;
+      background-color: #ff6f00; /* Set the same color as the table background color */
+    }
+
+    td:hover {
+      background-color: #3e8e41; /* Hover background color */
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3e8e41;
+    }
+
+    .see-more-btn {
+      display: block;
+      border-radius: 16px;
+      width: 80px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="repository.html">Repository</a>
+      <a href="about_us.html">About Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1><center>Architecture</center></h1>
+    <h2>Articles</h2>
+    <table>
+      <tr>
+        <td onclick="window.location='https://www.iitk.ac.in/nicee/wcee/article/13_2819.pdf';">Architectural Heritage and Seismic Design with Reference to Indian Temple Architecture</td>
+        <td onclick="window.location='https://ivypanda.com/essays/kandariya-mahadeva-temple-and-taj-mahal-style-and-meaning/';">Kandariya Mahadeva Temple and Taj Mahal: Style and Meaning Compare & Contrast Essay</td>
+      </tr>
+      <tr>
+        <td onclick="window.location='https://papers.cumincad.org/data/works/att/ijac201310106.pdf';">Generating 3 Dimensional Pavilions Described in Mayamatam - A Traditional Indian Architecture Treatise</td>
+        <td onclick="window.location='https://www.cmdachennai.gov.in/pdfs/seminar_heritage_buildings/Indo_Saracenic_Architecture_in_Chennai.pdf';">Indo Saracenic Architecture in Chennai</td>
+      </tr>
+
+    </table>
+    <button class="see-more-btn" style="margin-bottom: 40px; margin-top: 5px;" onclick="window.location='architecture_a.html';">See More</button>
+
+    <h2>Research Papers</h2>
+    <table>
+      <tr>
+        <td onclick="window.location='https://digitalscholarship.unlv.edu/cgi/viewcontent.cgi?article=2708&context=rtds';">Traditional Indian Architecture and its Adaptability to Mumbai City</td>
+        <td onclick="window.location='https://dash.harvard.edu/bitstream/handle/1/33813405/PUTHUCODESIVARAMAN-DOCUMENT-2017.pdf?sequence=1&isAllowed=y';">Concepts from Traditional Indian Architecture to
+Reduce Energy Consumption in Modern Indian Architecture</td>
+      </tr>
+      <tr>
+        <td onclick="window.location='https://www.sciencegate.app/app/document/download#10.26593/risa.v5i04.5301.384-401';">The Relation of Majapahit Temples With Vasusastra Manasara</td>
+        <td onclick="window.location='https://www.ece.lsu.edu/kak/EarlyArchitecture.pdf';">Early Indian Architecture and Art</td>
+      </tr>
+      <tr>
+        <td onclick="window.location='https://www.irjet.net/archives/V7/i5/IRJET-V7I5807.pdf';">Glimpses of Indian Traditional Architecture</td>
+        <td onclick="window.location='https://www.researchgate.net/publication/360682861_The_Indian_architecture-Beautiful_style';">The Indian Architecture - Beautiful Style</td>
+      </tr>
+    </table>
+    <button class="see-more-btn" style="margin-bottom: 40px; margin-top: 5px" onclick="window.location='architecture_rp.html';">See More</button>
+
+    <h2>Textbooks</h2>
+    <table>
+      <tr>
+        <td onclick="window.location='https://ncsm.gov.in/storage/files/Directory_of_Indian_Museums.pdf';">Directory of Museums in India</td>
+        <td onclick="window.location='https://ncert.nic.in/textbook/pdf/kefa106.pdf';">Temple Architecture and Sculpture</td>
+      </tr>
+      <tr>
+        <td onclick="window.location='https://www.degruyter.com/document/doi/10.1515/9783839467169/html?lang=en';">Indian Architecture in Postcards - A New Perspective on a Modern Heritage</td>
+        <td onclick="window.location='https://ia600406.us.archive.org/25/items/indianarchitectu00have/indianarchitectu00have.pdf';">Indian Architecture</td>
+      </tr>
+    </table>
+    <button class="see-more-btn" style="margin-bottom: 40px; margin-top: 5px" onclick="window.location='architecture_tb.html';">See More</button>
+
+  </main>
+</body>
+</html>

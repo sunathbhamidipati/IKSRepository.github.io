@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IKS Repository</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: georgia;
+    }
+
+    header {
+      background-color: #333;
+      padding: 15px;
+      text-align: center;
+      color: white;
+      position: fixed;
+      width: 100%;
+      z-index: 1;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      margin: 10px 0;
+      width: 100%;
+      padding: 0;
+      box-sizing: border-box;
+      padding: 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #ff6f00;
+      color: #333;
+      opacity: 75%;
+    }
+
+    .hero-image {
+      background-image: url('home_bg.png');
+      height: 600px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      margin-bottom: 10px;
+      transition: opacity 0.5s; /* Added transition property */
+    }
+
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+
+    .textbox {
+      background-color: #ff6f00;
+      color: #fff;
+      text-align: center;
+      padding: 10px 50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+      font-size: 24px;
+      font-family: georgia;
+      border-radius: 8px;
+      opacity: 95%;
+    }
+
+    .hide-on-scroll {
+      opacity: 1;
+    }
+
+    .show-on-scroll {
+      opacity: 0;
+      pointer-events: none; /* Prevent interactions when hidden */
+    }
+
+    #fact-container {
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    #fact-text {
+      font-size: 24px;
+      font-family: georgia;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+
+    #tell-me-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      font-family: georgia;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="repository.html">Repository</a>
+      <a href="about_us.html">About Us</a>
+    </nav>
+  </header>
+
+  <div class="hero-image" id="hero">
+    <div class="hero-text">
+      <div class="textbox">
+        <h2>The Indian Knowledge Systems Repository</h2>
+      </div>
+    </div>
+  </div>
+
+  <p style="font-size: 48px; text-align: center; font-family: georgia; color: #ff6f00;" class="hide-on-scroll">
+    <b>What is Indian Knowledge Systems?</b>
+  </p>
+
+  <p style="font-size: 24px; text-align: justify; margin-left: 10%; margin-right: 10%;" class="hide-on-scroll">
+    Indian Knowledge Systems (IKS) is an innovative cell under Ministry of Education (MoE) at AICTE, New Delhi. It aims
+    to aid research on all fields of IKS. The research umbrella covers all aspects of Indian culture and heritage
+    ranging from education oriented fields like math and science, and extra curriculars like arts and yoga.
+  </p>
+
+  <p style="font-size: 24px; text-align: justify; margin-left: 10%; margin-right: 10%;" class="hide-on-scroll">
+    India as a country is extremely rich in its heritage and culture. Scholars have made numerous contributions in
+    various fields thereby leading to a wider scope for research. The aim of IKS is to make people aware about these
+    findings and also encourage them to come up with ideas of their own.
+  </p>
+
+  <p style="font-size: 48px; text-align: center; font-family: georgia; color: #ff6f00;" class="hide-on-scroll">
+    <b>Did You Know?</b>
+  </p>
+
+  <div id="fact-container">
+    <p id="fact-text">Click the button to learn something new!</p>
+    <button id="tell-me-button" onclick="showNewFact()">Tell me something new</button>
+  </div>
+
+  <script>
+    // Array of facts
+    var facts = [
+      "Kung Fu actually originated in India!",
+      "The Wright brothers were not the first ones to invent an airplane, it was first invented by us, Indians!",
+      "The origins of ink are linked to our country, India!",
+      "Snakes and Ladders started out as a game in India!",
+      "India is home to Kalaripayattu: one of the most ancient martial arts in the world!"
+    ];
+
+    var factIndex = 0; // Index to keep track of the current fact
+
+    function showNewFact() {
+      var factText = document.getElementById("fact-text");
+
+      // Display the current fact
+      factText.textContent = facts[factIndex];
+
+      // Move to the next fact (cycle back to the first fact if at the end)
+      factIndex = (factIndex + 1) % facts.length;
+    }
+  </script>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      var hero = document.getElementById('hero');
+      var scrollPosition = window.scrollY;
+
+      // You can adjust the scroll position value based on when you want the transition to occur
+      if (scrollPosition > 200) {
+        hero.classList.add('show-on-scroll');
+        hero.classList.remove('hide-on-scroll');
+      } else {
+        hero.classList.add('hide-on-scroll');
+        hero.classList.remove('show-on-scroll');
+      }
+    });
+  </script>
+
+</body>
+
+</html>
